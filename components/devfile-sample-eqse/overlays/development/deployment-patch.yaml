@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-eqse
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci10t-786-0098-tenant/ci10t-786-0098-app/devfile-sample-eqse@sha256:7ee711936486cdd8a52927bd6ea84675ecd8f36759a1a3ae3c18b60496b25506
+        name: my-nodejs
+        resources: {}
+status: {}

@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-eqse
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-eqse
+    app.kubernetes.io/part-of: ci10t-786-0098-app
+  name: devfile-sample-eqsedrz5
+spec:
+  path: /
+  port:
+    targetPort: 3001
+  to:
+    kind: Service
+    name: devfile-sample-eqse
+    weight: null
+status: {}
